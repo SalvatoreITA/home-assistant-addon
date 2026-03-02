@@ -37,12 +37,9 @@ Aggiungi questo codice al tuo file `configuration.yaml` per creare un tracker ba
 mqtt:
   device_tracker:
     - name: "Airtag Chiavi"
-      state_topic: "findmy/airtag/chiavi_casa/attributes"
-      # Usiamo 'home' come template di stato generico
-      value_template: "home" 
+      state_topic: "findmy/airtag/chiavi_casa/state"
       json_attributes_topic: "findmy/airtag/chiavi_casa/attributes"
-      payload_available: "online"
-      payload_not_available: "offline"
+      source_type: gps
 ```
 
 ## ⚖️ Disclaimer & Limitazione di Responsabilità

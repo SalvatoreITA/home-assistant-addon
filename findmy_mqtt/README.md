@@ -4,7 +4,8 @@ Questo Add-on ti permette di tracciare i tuoi Apple AirTag, iPhone, iPad e Mac d
 
 ## ⚙️ Configurazione
 1. Compila l'Apple ID e la Password.
-2. Inserisci l'URL del tuo server Anisette locale (es. `http://IP:6969`).
+2. Inserisci l'URL del tuo server Anisette locale (es. `http://IP:6969`). 
+***https://github.com/SalvatoreITA/home-assistant-addon/tree/main/anisette_server***
 3. Carica i file `.plist` dei tuoi dispositivi nella cartella condivisa `/share/findmy/keys`.
 
 ## ⚠️ Primo Avvio (Codice 2FA)
@@ -40,6 +41,19 @@ mqtt:
       state_topic: "findmy/airtag/chiavi_casa/state"
       json_attributes_topic: "findmy/airtag/chiavi_casa/attributes"
       source_type: gps
+```
+
+Aggiungi questo codice al tuo file `configuration.yaml` per creare un sensore ultimo aggiornamento AirTag:
+
+```yaml
+  sensor:
+    - name: "Ultimo Aggiornamento Airtag Chiavi"
+      state_topic: "findmy/airtag/chiavi_casa/attributes"
+      device_class: timestamp
+      value_template: >
+        {% set ts = value_json.timestamp | float(0) %}
+        {% set ts_sec = ts / 1000 if ts > 9999999999 else ts %}
+        {{ (ts_sec | as_datetime | as_local).isoformat() }}
 ```
 
 ## ⚖️ Disclaimer & Limitazione di Responsabilità

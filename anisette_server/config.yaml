@@ -2,6 +2,7 @@ name: "Apple Anisette Server"
 description: "Server Anisette locale per l'autenticazione Apple"
 version: "1.0.0"
 slug: "anisette_server"
+url: "https://github.com/SalvatoreITA/home-assistant-addon/tree/main/anisette_server"
 init: false
 arch:
   - aarch64
@@ -16,3 +17,4 @@ map:
   - share:rw
 options: {}
 schema: {}
+

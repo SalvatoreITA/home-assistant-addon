@@ -2,7 +2,7 @@ name: "FindMy MQTT Bridge"
 description: "Ponte tra Apple FindMy e MQTT per tracciare i tuoi dispositivi."
 version: "1.0.0"
 slug: "findmy_mqtt"
-url: "https://github.com/TUO_NOME/TUA_REPO/tree/main/findmy_mqtt"
+url: "https://github.com/SalvatoreITA/home-assistant-addon/tree/main/findmy_mqtt"
 init: false
 arch:
   - aarch64
@@ -31,3 +31,4 @@ schema:
   mqtt_user: str
   mqtt_pass: password
   interval: int
+

@@ -1,0 +1,33 @@
+name: "FindMy MQTT Bridge"
+description: "Ponte tra Apple FindMy e MQTT per tracciare i tuoi dispositivi."
+version: "1.0.0"
+slug: "findmy_mqtt"
+url: "https://github.com/TUO_NOME/TUA_REPO/tree/main/findmy_mqtt"
+init: false
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+startup: services
+boot: auto
+map:
+  - share:rw
+options:
+  apple_id: "tua@email.com"
+  apple_pass: "LaTuaPassword"
+  anisette_url: "http://IP_ANISETTE:6969"
+  mqtt_broker: "core-mosquitto"
+  mqtt_port: 1883
+  mqtt_user: ""
+  mqtt_pass: ""
+  interval: 15
+schema:
+  apple_id: str
+  apple_pass: password
+  anisette_url: str
+  mqtt_broker: str
+  mqtt_port: port
+  mqtt_user: str
+  mqtt_pass: password
+  interval: int

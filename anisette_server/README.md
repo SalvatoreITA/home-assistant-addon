@@ -21,6 +21,8 @@ A differenza di altri Add-on, **non è necessaria alcuna configurazione manuale*
 Una volta avviato, il server Anisette rimarrà in ascolto sulla porta `6969`.
 Per farlo comunicare con il tuo *FindMy MQTT Bridge*, vai nella configurazione di quest'ultimo e inserisci l'indirizzo IP del tuo Home Assistant seguito dalla porta. 
 
+**GUIDA  FindMy MQTT Bridge**: https://github.com/SalvatoreITA/home-assistant-addon/tree/main/findmy_mqtt
+
 Esempio di URL da inserire nel FindMy Bridge:
 `http://192.168.1.100:6969` *(Sostituisci l'IP con quello reale del tuo Home Assistant).*
 

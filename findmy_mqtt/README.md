@@ -5,7 +5,7 @@ Questo Add-on ti permette di tracciare i tuoi Apple AirTag, iPhone, iPad e Mac d
 ## ⚙️ Configurazione
 1. Compila l'Apple ID e la Password.
 2. Inserisci l'URL del tuo server Anisette locale (es. `http://IP:6969`). 
-***https://github.com/SalvatoreITA/home-assistant-addon/tree/main/anisette_server***
+**GUIDA Anisette:** https://github.com/SalvatoreITA/home-assistant-addon/tree/main/anisette_server
 3. Carica i file `.plist` dei tuoi dispositivi nella cartella condivisa `/share/findmy/keys`.
 
 ## ⚠️ Primo Avvio (Codice 2FA)

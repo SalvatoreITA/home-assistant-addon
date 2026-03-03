@@ -12,5 +12,5 @@ Puoi aggiungere questa repository al tuo Home Assistant cliccando su questo bott
 1. Apri il tuo Home Assistant.
 2. Vai su **Impostazioni** > **Componenti aggiuntivi** > **Raccolta**.
 3. Clicca sui tre puntini in alto a destra e scegli **Archivi**.
-4. Incolla l'URL di questa pagina GitHub e fai **Aggiungi**.
+4. Incolla il seguente l'URL e fai **Aggiungi**:
 https://github.com/SalvatoreITA/home-assistant-addon

@@ -1,4 +1,4 @@
-# 🍏 DomHouse Home Assistant Add-ons
+# 🏠 DomHouse Home Assistant Add-ons
 
 Benvenuto nella repository ufficiale di **DomHouse.it**! 
 Qui troverai una raccolta di Add-on utili per Home Assistant.
